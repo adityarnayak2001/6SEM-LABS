@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Enter Password</title>
+    <script>
+        
+        var rankings = ['alice','bob','eve'];
+        for(var i=0,len=rankings.length;i<len;i++){
+            (function(i){
+            setTimeout(function(){
+                console.log(i,rankings[i]);
+            },i*1000);
+        })(i);
+        }
+    
+    </script>
+</head>
+<body> 
+</body>
+</html>
