@@ -1,21 +1,18 @@
-<!DOCTYPE html>
-<head></head>
-<body>
+<html>
+    <head>
+<title> recipe</title>
+    </head>
+    <body>
 <script>
-    var favoriteRecipe = {
-        title: "Mole",
-        serves: 2,
-        ingredients: ["cinnamon", "cumin", "cocoa"]
-    };
-      
-    document.writeln ("Title: " + favoriteRecipe.title);
-    document.writeln ("<br>Servings: " + favoriteRecipe.serves);
-    document.writeln ("<br>Ingredients:");
-      
-    for (i=0; i<favoriteRecipe.ingredients.length; i++) {
-        document.writeln("<br>"+favoriteRecipe.ingredients[i]);
-    } 
-    </script>
+ var recipe = {
+     title: 'mole',
+     servings: 2 ,
+     Ingredients: ['cumin' , 'cinnamon' , 'cocoa']
+ };
+ console.log(recipe.title);
+ console.log('serves: '+recipe.servings);
+ console.log('Ingredients:');
+ recipe.Ingredients.forEach(item => console.log(item));
+</script>
     </body>
-    </html>
-    
+</html>

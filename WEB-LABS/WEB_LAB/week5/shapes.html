@@ -1,6 +1,8 @@
 <html>
-<head></head>
-<body>
+    <head>
+<title> shape</title>
+    </head>
+    <body>
 <script>
 function Shape() {
     this.type = "shape";
@@ -11,23 +13,25 @@ function Shape() {
 
 function Triangle(a,b,c){
      this.type="triangle";
-     this.a = a;
+     this.a =a;
      this.b = b;
      this.c = c;
 }
 
-var shape = new Shape(); //follow the requirements a bit more literally :)
+var shape = new Shape();    
 Triangle.prototype = shape;
 
 Triangle.prototype.getPerimeter = function() {
   return this.a + this.b + this.c;
 }
-
 var t = new Triangle(1 , 2 ,3);
 
-console.log(t.constructor === Shape);
+console.log(t.constructor === Triangle);
 console.log(shape.isPrototypeOf(t));
 console.log(t.getPerimeter());
 console.log(t.getType());
+
+
 </script>
-</body></html>
+    </body>
+</html>
